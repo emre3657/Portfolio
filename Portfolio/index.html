@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emre Ekinci - Full Stack Developer</title>
+    <link rel="stylesheet" href="./public/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header & Navigation -->
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">Emre Ekinci</div>
+          <ul class="nav-links">
+            <li><a href="#about">Hakkımda</a></li>
+            <li><a href="#skills">Yetenekler</a></li>
+            <li><a href="#projects">Projeler</a></li>
+            <li><a href="#experience">Deneyim</a></li>
+            <li><a href="#contact">İletişim</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>
+            Merhaba, Ben <span style="color: var(--accent-color)">Emre</span>
+          </h1>
+          <p>
+            Modern web dünyasında kendi yolumu inşa ediyorum. <br />
+            Karmaşık sorunları yazılımla basitleştirmeyi seviyorum.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn">Projelerimi Gör</a>
+            <a
+              href="#contact"
+              class="btn"
+              style="
+                background-color: transparent;
+                color: var(--primary-color);
+                border: 2px solid var(--primary-color);
+              "
+              >İletişime Geç</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">Hakkımda</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Merhaba! Ben Emre. Web geliştirme yolculuğumda sürekli öğreniyor,
+              denedikçe gelişiyor ve üreterek ilerliyorum.
+            </p>
+            <p>
+              Amacım; kullanıcıya değer katan, işlevsel ve modern web
+              deneyimleri oluşturmak. Yeni teknolojileri keşfetmek ve bunları
+              projelerde hayata geçirmekten keyif alıyorum.
+            </p>
+            <a href="#contact" class="btn" style="margin-top: 20px"
+              >İletişime Geç</a
+            >
+          </div>
+
+          <div class="about-image">
+            <img src="./public/images/profile.jpg" alt="Profil Fotoğrafı" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">Yetenekler</h2>
+        <div class="skills-container">
+          <div class="skill-category">
+            <h3>Front-end</h3>
+            <ul class="skill-list">
+              <li>HTML5 & CSS3</li>
+              <li>JavaScript (ES6+)</li>
+              <li>Responsive Tasarım</li>
+              <li>React (öğrenme aşamasında)</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Back-end</h3>
+            <ul class="skill-list">
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>Python (Django/Flask)</li>
+              <li>RESTful API'ler</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Veritabanı</h3>
+            <ul class="skill-list">
+              <li>MongoDB</li>
+              <li>MySQL</li>
+              <li>PostgreSQL</li>
+              <li>Microsoft SQL Server</li>
+              <li>Veritabanı Tasarımı & Yönetimi</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Diğer Araçlar</h3>
+            <ul class="skill-list">
+              <li>Git & GitHub</li>
+              <li>Jest & Testing Library</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">Projeler</h2>
+
+        <div class="projects-grid">
+          <!-- Face ID Login -->
+          <div class="project-card">
+            <div class="project-image">
+              <!-- poster görseli, tıklanınca video açılacak -->
+              <img
+                src="./public/images/faceid.png"
+                alt="Face ID Login"
+                class="lightbox-trigger"
+                data-type="video"
+                data-video="./public/videos/faceid-demo.mp4"
+              />
+              <span class="play-badge">▶</span>
+            </div>
+            <div class="project-info">
+              <h3>Face ID Login</h3>
+              <p>
+                Python/Flask ile yüz tanıma tabanlı giriş akışı... (Eğitsel/POC)
+              </p>
+              <div class="project-tags">
+                <span class="project-tag special">🎓 Bitirme Projesi</span>
+                <span class="project-tag">Flask</span>
+                <span class="project-tag">OpenCV</span>
+                <span class="project-tag">Face Recognition</span>
+                <span class="project-tag">MySQL</span>
+                <span class="project-tag">HTML5 & CSS3</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/emre3657/FaceID-Web-App"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- E-Commerce (ASP.NET Core MVC) -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="./public/images/e-commerce.png"
+                alt="E-Commerce App"
+                class="lightbox-trigger"
+                data-type="image"
+                data-src="./public/images/e-commerce.png"
+              />
+            </div>
+            <div class="project-info">
+              <h3>E-Commerce (MVC)</h3>
+              <p>
+                ASP.NET Core MVC ile deneysel e-ticaret uygulaması... (Eğitsel)
+              </p>
+              <div class="project-tags">
+                <span class="project-tag special">💼 Staj Projesi</span>
+                <span class="project-tag">ASP.NET Core MVC</span>
+                <span class="project-tag">EF Core</span>
+                <span class="project-tag">SQL Server</span>
+                <span class="project-tag">Razor</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/emre3657/E-Commerce-App"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Jobs API (Node/Express) -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="./public/images/jobs-api.png"
+                alt="Jobs API"
+                class="lightbox-trigger"
+                data-type="image"
+                data-src="./public/images/jobs-api.png"
+              />
+            </div>
+            <div class="project-info">
+              <h3>Jobs API</h3>
+              <p>
+                Kimlik doğrulamalı iş başvurusu takip API’si... (Canlı demo
+                mevcut, Eğitsel)
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">Express</span>
+                <span class="project-tag">MongoDB</span>
+                <span class="project-tag">JWT</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://jobs-api-fw93.onrender.com"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fa-solid fa-link"></i>Demo
+                </a>
+                <a
+                  href="https://github.com/emre3657/Jobs-API"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <h2 class="section-title">Deneyim & Eğitim</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <span class="date">Ekim-Kasım / 2025</span>
+              <h3>Stajyer</h3>
+              <p style="font-weight: 600; color: black">
+                Eroğlu Global Holding
+              </p>
+              <p>
+                Full-Stack Development / E-Ticaret <br />
+                Kullanıcı arayüzü, sepet yönetimi <br />
+                Admin panel, sipariş yönetimi
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <span class="date">Temmuz-Ağustos / 2024</span>
+              <h3>Stajyer</h3>
+              <p style="font-weight: 600; color: black">
+                Zy Elektrikli Traktör
+              </p>
+              <p>
+                Gömülü yazılım, Arduino, C <br />
+                RS232, I2C, SPI, CAN
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <span class="date">2020 - 2025 (Mart)</span>
+              <h3>Bilgisayar Mühendisliği(Tr)</h3>
+              <p style="font-weight: 600; color: black">
+                İstanbul Beykent Üniversitesi
+              </p>
+              <p>Lisans derecesi, AGNO: 3,19</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <span class="date">2019 - 2020</span>
+              <h3>İngilizce Hazırlık (İsteğe Bağlı)</h3>
+              <p style="font-weight: 600; color: black">
+                İstanbul Beykent Üniversitesi
+              </p>
+              <p>Seviye: B1</p>
+              <p>Anlama orta, konuşma orta</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">İletişim</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <p>
+              Yeni projeler, iş teklifleri veya sadece merhaba demek için
+              benimle iletişime geçmekten çekinmeyin. En kısa sürede size dönüş
+              yapacağım.
+            </p>
+            <div class="contact-item">
+              <div class="contact-icon email">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div>
+                <h3>Email</h3>
+                <p>
+                  <a href="mailto:emre3657@gmail.com">emre3657@gmail.com</a>
+                </p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <h3>Konum</h3>
+                <p>Sarıyer, İstanbul, Türkiye</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon linkedin">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <div>
+                <h3>LinkedIn</h3>
+                <p>
+                  <a
+                    href="https://linkedin.com/in/emre-ekincii"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    linkedin.com/in/emre-ekincii
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Adınız</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="subject">Konu</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Mesajınız</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <input
+                type="text"
+                name="honeypot"
+                autocomplete="off"
+                style="display: none"
+              />
+              <button type="submit" class="btn">Mesaj Gönder</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div>
+            <div class="footer-logo">Emre Ekinci</div>
+            <p>Full Stack Developer</p>
+          </div>
+          <div class="social-links">
+            <a
+              href="https://github.com/emre3657"
+              target="_blank"
+              rel="noopener"
+              title="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://linkedin.com/in/emre-ekincii"
+              target="_blank"
+              rel="noopener"
+              title="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 Emre Ekinci. Tüm Hakları Saklıdır.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog">
+      <div class="lightbox-backdrop" data-close="true"></div>
+      <div class="lightbox-body" role="document">
+        <button class="lightbox-close" aria-label="Kapat">
+          <i class="fa-solid fa-circle-xmark"></i>
+        </button>
+        <div class="lightbox-content" id="lightbox-content"></div>
+      </div>
+    </div>
+
+    <script src="./public/index.js" type="module"></script>
+  </body>
+</html>
