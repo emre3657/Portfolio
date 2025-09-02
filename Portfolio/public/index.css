@@ -446,6 +446,31 @@ nav {
   resize: vertical;
 }
 
+/* Toast Message */
+#toast[popover] {
+  max-width: min(420px, 90vw);
+  padding: 12px 14px;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+  color: #fff;
+  background: var(--primary-color, #2d5d87);
+  /* fade & slide */
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease; /* daha yavaş */
+}
+#toast.success {
+  background: #2e7d32;
+}
+#toast.error {
+  background: #c62828;
+}
+#toast.is-open {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Footer */
 footer {
   background-color: var(--dark-bg);
